@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+<div class="container mt-5 mb-5">
+    <h1> Add article </h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+<!--        <input type="text" name="title", placeholder="title">-->
+        <input type="submit" value="Save">
+    </form>
+    <!--form action="{% url 'blog:add' %}" method="post">
+        <input type="text" name="title" placeholder="Add articles name" class="form-control"><br>
+        <input type="text" name="anons" placeholder="Add anons" class="form-control"><br>
+        <textarea name="full_text" placeholder="Add text" class="form-control"></textarea><br>
+        <button type="submit" class="btn btn-success"> Add article</button>
+    </form-->
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+    <main>
+    <div class="container mt-5">
+    <h1>About mit base</h1>
+        {% filter force_escape|lower %}
+            This text will be HTML-escaped, and will appear in all lowercase.
+        {% endfilter %}
+    </div>
+
+    </main>
+{% endblock %}
+

@@ -1,0 +1,12 @@
+{% load static %}
+
+.background-image {
+    background-image: url("{% static 'vendor/css/blog.jpg' %}");
+    background-size: cover;
+    background-position: center;
+
+}
+.max-image {
+  max-width: 300px;
+  max-height: 200px;
+}
